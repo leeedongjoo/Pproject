@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "comproject.parkingproject"
     compileSdk = 34
-
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "comproject.parkingproject"
         minSdk = 27

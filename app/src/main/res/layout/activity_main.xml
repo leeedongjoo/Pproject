@@ -8,12 +8,117 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/ParkName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="전산관 주차장"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <!--    // 홈 버튼-->
+    <android.widget.Button
+        android:id="@+id/homeBtn"
+        android:layout_width="64dp"
+        android:layout_height="69dp"
+        android:background="@drawable/home_button"
+        android:text="홈"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="658dp"
+        tools:ignore="MissingConstraints" />
+
+    <!--    // 넘기기 버튼 (좌, 우)-->
+    <android.widget.Button
+        android:id="@+id/leftBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/next_btn"
+        android:rotation="90"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="331dp"
+        tools:ignore="MissingConstraints" />
+
+    <android.widget.Button
+        android:id="@+id/rightBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/next_btn"
+        android:rotation="-90"
+        tools:layout_editor_absoluteX="365dp"
+        tools:layout_editor_absoluteY="331dp"
+        tools:ignore="MissingConstraints" />
+
+    <!--    // 빈 주차장-->
+
+    <android.widget.Button
+        android:id="@+id/unpark02"
+        android:layout_width="70dp"
+        android:layout_height="180dp"
+        android:background="@drawable/unparktest"
+        android:text="Button"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <android.widget.Button
+        android:id="@+id/unpark03"
+        android:layout_width="70dp"
+        android:layout_height="180dp"
+        android:background="@drawable/unparktest"
+        android:text="Button"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <android.widget.Button
+        android:id="@+id/park01"
+        android:layout_width="70dp"
+        android:layout_height="180dp"
+        android:background="@drawable/parktest"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <android.widget.Button
+        android:id="@+id/park02"
+        android:layout_width="70dp"
+        android:layout_height="180dp"
+        android:background="@drawable/parktest"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <android.widget.Button
+        android:id="@+id/park03"
+        android:layout_width="70dp"
+        android:layout_height="180dp"
+        android:background="@drawable/parktest"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <android.widget.Button
+        android:id="@+id/unpark01"
+        android:layout_width="70dp"
+        android:layout_height="180dp"
+        android:background="@drawable/unparktest"
+        android:text="Button"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <!--    // 찬 주차장-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
